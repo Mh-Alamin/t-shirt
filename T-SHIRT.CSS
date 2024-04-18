@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color:#222;
+}
+
+header{
+    background:#f9f9f9;
+}
+
+img{
+    width:100%;
+    display: block;
+}
+
+.navbar img{
+    width:35px;
+    opacity:0.85;
+}
+
+.banner-wrapper{
+    max-width:1280px;
+    margin: 0 auto;
+    padding:1.6rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    min-height: 100vh;
+}
+
+.navbar{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-brand span{
+    margin-left: 0.4rem;
+    color:#222;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.nav-icons{
+    display: flex;
+    align-items:center;
+}
+
+.nav-icons a:last-child{
+    margin-left: 1rem;
+    display: block;
+    color:#222;
+}
+
+.banner-content{
+    flex:1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+}
+
+.banner-left h2{
+   font-size: 3rem;
+   text-transform: uppercase;
+   line-height: 1.2;
+   padding-top: 2rem;
+}
+
+.banner-left span{
+    display: block;
+    font-size: 4.4rem;
+}
+
+.banner-left p{
+    margin:1.6rem 0;
+    line-height: 1.7;
+}
+
+.banner-left button{
+    background:#222;
+    border: none;
+    color:#fff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight:600;
+    text-transform: uppercase;
+    padding:0.65rem 2rem;
+    border:3px solid #222;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.banner-left button:hover{
+    background:#fff;
+    color:#222;
+    border-color:#222;
+}
+
+.banner-left button:focus{
+    outline: 0;
+}
+
+.color-content{
+    margin-top:3.2rem;
+}
+
+.color-content h3{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding-bottom:1.5rem;
+    padding-left:0.5rem;
+}
+
+.color{
+    width:35px;
+    height:35px;
+    background:none;
+    border-radius:50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.color-black{
+    background-color: #242424;
+}
+.color:hover{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.color-blue{
+    background-color: #085ea0;
+}
+
+.color-yellow{
+    background-color: #c0b50d;
+}
+
+.color-red{
+    background-color: #8b0516;
+}
+
+.color-white{
+    background-color: #fff;
+}
+
+.color-green{
+    background-color: green;
+}
+
+.color-gray{
+    background-color: gray;
+}
+
+.color-purple{
+    background-color: purple;
+}
+
+.color-orange{
+    background-color: orange;
+}
+
+.color-blue{
+    background-color: blue;
+}
+
+.active-color{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.color-groups{
+   display: flex;
+}
+
+.button {
+    position: absolute;
+    width: 500px;
+    left:50;
+    top: 300px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+
+  .button a {
+    width: 200px;
+    padding: 12px 36px;
+    text-align: center;
+    color: black;
+    border: solid 2px rgb(96, 14, 14);
+    z-index: 1;
+    text-decoration: none;
+    margin-left: 100px;
+  }
+
+  .banner-right:hover .button {
+    opacity: 1;
+  }
+
+  .banner-right:hover img{
+    display: block;
+    background: rgba(0, 0, 0, .0);
+    width: 600;
+    height: 300;
+  }
+
+  .banner-right {
+    position: relative;
+    margin-top: 50px;
+    width: 600px;
+    height: 300px;
+  }
+
+
+/*----Media Quries----*/
+
+@media screen and (max-width: 992px){
+    .navbar{
+        padding-bottom:3rem;
+    }
+
+    .banner-content{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .banner-left h2{
+        font-size: 2rem;
+        padding-top:0;
+    }
+
+    .banner-left span{
+        font-size: 2.8rem;
+    }
+
+    .color-groups{
+        display: flex;
+        justify-content: center;
+    }
+
+    .color:last-child{
+        margin-right: 0;
+    }
+
+    .button a {
+        margin-left: 0px;
+    }
+
+    .button {
+        margin-left: 0px;
+    }
+
+    .banner-right img{
+        margin-left: -50px;
+    }
+}
